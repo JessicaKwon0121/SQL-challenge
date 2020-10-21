@@ -1,0 +1,34 @@
+Departments
+-
+dept_no VARCHAR(9) PK
+dept_name VARCHAR(9)
+
+Departments_employee
+-
+emp_no INK(331603) PK
+dept_no INT(331603) FK >- Departments.dept_no
+
+Departments_Manager
+-
+dept_no VARCHAR(24) PK
+emp_no INK(24) FK >- Departments_employee.emp_no
+
+Employees
+-
+emp_no INK(300024) FK >- Departments_employee.emp_no
+emp_title_id VARCHAR(300024)
+birth_date VARCHAR(300024)
+first_name VARCHAR(300024)
+last_name VARCHAR(300024)
+sex VARCHAR(300024)
+hire_date VARCHAR(300024)
+
+Salaries
+-
+emp_no INK(300024) FK >- Departments_employee.emp_no
+salary INK(300024)
+
+Titles
+-
+title_id VARCHAR(7) FK >- Employees.emp_title_id
+title VARCHAR(7)
